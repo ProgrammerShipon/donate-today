@@ -1,7 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+}
+
+section {
+    padding: 70px 0;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+.container {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.btn-primary {
+    border: none;
+    padding: 16px 20px;
+    background-color: #FF5959;
+    font-size: 21px;
+    color: white;
+    border-radius: 4px;
+    margin: 30px 0;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.btn-primary:hover {
+    background-color: #f15656;
+    color: #d8d8d8;
+}
+
+.section-title {
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+
+/* header styles */
+header {
+    background-image: linear-gradient(to bottom , transparent, #000000d8, #000000f1), url('../images/donation10.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+header .container {
+    text-align: center;
+}
+
+header .container h1 {
+    font-size: 40px;
+    width: 500px;
+    margin: 0 auto 20px;
+}
+
+header .container p {
+    width: 70vw;
+    font-size: 20px;
+    line-height: 25px;
+    margin: 0 auto;
+}
+
+.donate_today_container {
+    text-align: center;
+}
+
+.donate_today_container > p {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.price_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 27px 0;
+    gap: 16px;
+}
+
+.price_list p {
+    border: 1px solid #80808066;
+    padding: 14px 25px;
+    background: #FAFAFA;
+    border-radius: 5px;
+    font-size: 23px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.price_list p:hover {
+    color: #FF5959;
+    border-color: #FF5959;
+    background: #ff595914;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+input.donate_input {
+    font-size: 20px;
+    border: none;
+    background: #00000012;
+    padding: 12px 18px;
+    text-align: center;
+    outline: none;
+}
+
+.input-group .btn-primary {
+    margin: 0;
+}
+
+
+
+/* Our Plan */
+.plan_conatainer {
+    text-align: center;
+}
+
+.plan_blogs {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+article.plan_blog {
+    background: #ff59592b;
+    padding: 27px 22px;
+    text-align: left;
+    line-height: 22px;
+    border-radius: 5px;
+    box-shadow: 0 0 7px #cfcfcf73;
+    transition: .4s;
+    cursor: pointer;
+}
+
+article.plan_blog:hover {
+    background-color: #4f9da624;
+}
+
+article.plan_blog h3 {
+    margin: 20px 0;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+
+/* Donations Style */
+
+.donation_item {
+    display: flex;
+    gap: 70px;
+    margin-bottom: 70px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.donation_item:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+.donation_item .item_description ,
+.donation_item .item_img {
+    width: 50%;
+}
+
+.donation_item .item_description h1 {
+    margin-bottom: 15px;
+    font-size: 36px;
+    color: #121212;
+}
+
+.donation_item .item_description p {
+    margin: 17px 0;
+    line-height: 26px;
+}
+
+.donation_item img {
+    width: 100%;
+}
+
+
+/* Get Updates */
+
+.getUpdates_content p {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.getUpdates_content .subscribe_div {
+    width: 60vw;
+    margin: 0  auto;
+    background-color: #ff595954;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.subscribe_div input {
+    border: none;
+    padding: 16px 20px;
+    background-color: #98989847;
+    font-size: 21px;
+    color: black;
+    border-radius: 5px 0px 0px 5px;
+    margin: 30px 0;
+    outline: none;
+}
+
+.subscribe_div button {
+    border-radius: 0px 5px 5px 0px;
+}
+
+
+/* Footer  */
+footer {
+    background-color: #0B0D17;
+    text-align: center;
+    line-height: 50px;
+    padding: 55px;
+
+}
+
+footer h1 {
+    color: #FF5959;
+    font-family: 'Lobster', cursive;
+}
+
+footer p {
+    color: #D9DBE1;
 }
